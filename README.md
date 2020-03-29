@@ -24,6 +24,7 @@
         "totals":
         {
             "tested": 2085,
+            "testedO": 2086,
             "confirmed": 659,
             "fatal": 10,
             "hospitalized": 334,
@@ -54,6 +55,7 @@
         "totals":
         {
             "tested": 0,
+            "testedO": 0,
             "confirmed": 0,
             "fatal": 0,
             "hospitalized": 0,
