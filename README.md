@@ -23,25 +23,28 @@
         "date": "DD/MM/YYYY HH:MM",
         "totals":
         {
-            "tested": 2085,
-            "testedO": 2086,
-            "confirmed": 659,
-            "fatal": 10,
-            "hospitalized": 334,
-            "recovered": 0,
-            "ventilator": 49,
-            "caseP": "31.61",
-            "fatalP": "1.52"
+            "tested": 3560,
+            "testedO": 3561,
+            "confirmed": 900,
+            "fatal": 23,
+            "hospitalized": 584,
+            "recovered": 42,
+            "ventilator": 69,
+            "caseP": "25.28",
+            "fatalP": "2.56",
+            "p0": 25,
+            "vs": 16,
+            "f0": 11
         },
         "details":
         {
-            "positive": 131,
-            "hospital": 22,
-            "personal": 109,
-            "negative": 240,
-            "fatal": 2,
+            "positive": 115,
+            "hospital": 0,
+            "personal": 115,
+            "negative": 362,
+            "fatal": 7,
             "recovered": 0,
-            "totalTested": 371
+            "totalTested": 477
         },
         "info":
         {
@@ -62,7 +65,10 @@
             "recovered": 0,
             "ventilator": 0,
             "caseP": "0.00",
-            "fatalP": "0.00"
+            "fatalP": "0.00",
+            "p0": 0,
+            "vs": 0,
+            "f0": 0
         },
         "details":
         {
