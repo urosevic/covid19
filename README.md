@@ -1,9 +1,9 @@
 # covid19
-Кумулативни отворени подаци о случајевима у току епидемије COVID-19 у Србији у JSON формату добијени процесирањем Гугл табеле https://bit.ly/covid19-srbija
+Кумулативни отворени подаци о случајевима у току епидемије COVID-19 у Србији у JSON формату добијени процесирањем Гугл табеле https://bit.ly/covid19-srbija и прибављањем података АПИја доступном на https://covid19.data.gov.rs/
 
 Ове податке можете слободно користити за своје пројекта.
 
-Датасет садржи испод наведене JSON нодове:
+JSON датотека *covid19srbija.json* садржи датасет са комплетним подацима о оболелима од COVID-19 у Србији следеће структуре:
 
 ```
 {
@@ -86,5 +86,68 @@
             "note": "..."
         }
     }]
+}
+```
+
+JSON датотека *covid19srbija-gradovi.json* садржи датасет са укупним бројем оболелих од COVID19 у Србији следеће структуре:
+
+```
+{
+    "name": "COVID-19 Srbija City Community Data",
+    "description": "Подаци о укупном броју оболелих у току епидемије COVID-19 у Србији по градовима",
+    "homepage": "https://github.com/urosevic/covid19",
+    "license": "ODC Open Database License (ODbL)",
+    "author":
+    {
+        "name": "Александар Урошевић",
+        "email": "urke.kg@gmail.com"
+    },
+    "source": ["https://bit.ly/covid19-srbija", "https://covid19.data.gov.rs/"],
+    "updated": "YYYY-MM-DDTHH:MM:SS+02:00",
+    "cities":
+    {
+        "0":
+        {
+            "name": "...",
+            "data":
+            {
+                "YYYY-MM-DD":
+                {
+                    "value": 0,
+                    "rank": 0,
+                    "of": 0
+                }
+            },
+            {
+                "YYYY-MM-DD":
+                {
+                    "value": 0,
+                    "rank": 0,
+                    "of": 0
+                }
+            }
+        },
+        "1":
+        {
+            "name": "...",
+            "data":
+            {
+                "YYYY-MM-DD":
+                {
+                    "value": 0,
+                    "rank": 0,
+                    "of": 0
+                }
+            },
+            {
+                "YYYY-MM-DD":
+                {
+                    "value": 0,
+                    "rank": 0,
+                    "of": 0
+                }
+            }
+        }
+    }
 }
 ```
