@@ -13,6 +13,7 @@
 У овом репозиторијуму доступне су следеће датотеке:
 * **covid19srbija.json** - Комплетни збирни подацима у вези са COVID-19 у Србији. Извор је Гугл табела https://bit.ly/covid19-srbija у којој су прикупљени подаци са https://covid19.rs/ и https://www.zdravlje.gov.rs/sekcija/345852/covid-19.php
 * **covid19srbija-gradovi.json** - Укупан број оболелих од COVID-19 у Србији по градовима. Препаковани подаци са https://data.gov.rs/sr/datasets/covid-19-zarazheni/
+* **covid19srbija-gradovi-kit.json** - Укупан број оболелих од COVID-19 у Србији по градовима. Препаковани подаци са https://covid19.data.gov.rs/
 * **covid19srbija-zarazeni-mesta.csv** - Препаковани подаци доступни на https://data.gov.rs/sr/datasets/covid-19-zarazheni/ о укупном броју заражених по свим местима у Србији у матрикс табелу у CSV формату. Користи се на https://docs.google.com/spreadsheets/d/1gT3aFebhafzvGfmIkEsBxT-vgPpr9UOnZDTAxnWP2U0/edit#gid=1501414670
 * **poster/latest.png** - Визуелни постер са статистичким подацима за последње ажурирано стање података. Директоријум **poster/** садржи и постере за претходне дане почевши од 10. априла 2020
 
@@ -117,7 +118,7 @@ JSON датотека **covid19srbija-gradovi.json** садржи датасет
         "name": "Александар Урошевић",
         "email": "urke.kg@gmail.com"
     },
-    "source": ["https://bit.ly/covid19-srbija", "https://covid19.data.gov.rs/"],
+    "source": ["https://bit.ly/covid19-srbija", "https://data.gov.rs/sr/datasets/covid-19-zarazheni/"],
     "updated": "YYYY-MM-DDTHH:MM:SS+02:00",
     "cities":
     {
