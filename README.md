@@ -39,28 +39,31 @@ JSON датотека **covid19srbija.json** садржи датасет са к
         "date": "DD/MM/YYYY HH:MM",
         "totals":
         {
-            "tested": 3560,
-            "testedO": 3561,
-            "confirmed": 900,
-            "fatal": 23,
-            "hospitalized": 584,
-            "recovered": 42,
-            "ventilator": 69,
-            "caseP": "25.28",
-            "fatalP": "2.56",
-            "p0": 25,
-            "vs": 16,
-            "f0": 11
+            "tested": 20957,
+            "testedO": 20958,
+            "confirmed": 4054,
+            "fatal": 85,
+            "hospitalized": 2890,
+            "ventilator": 138,
+            "recovered": 400,
+            "caseP": "19.34",
+            "fatalP": "2.10",
+            "p0": 38,
+            "vs": 29,
+            "f0": 24
         },
         "details":
         {
-            "positive": 115,
-            "hospital": 0,
-            "personal": 115,
-            "negative": 362,
-            "fatal": 7,
+            "positive": 424,
+            "hospital": 424,
+            "personal": 0,
+            "negative": 2222,
+            "totalTested": 2646,
+            "fatalM": 3,
+            "fatalF": 2,
+            "fatal": 5,
             "recovered": 0,
-            "totalTested": 477
+            "caseP": "16.02"
         },
         "info":
         {
@@ -78,8 +81,8 @@ JSON датотека **covid19srbija.json** садржи датасет са к
             "confirmed": 0,
             "fatal": 0,
             "hospitalized": 0,
-            "recovered": 0,
             "ventilator": 0,
+            "recovered": 0,
             "caseP": "0.00",
             "fatalP": "0.00",
             "p0": 0,
@@ -92,9 +95,12 @@ JSON датотека **covid19srbija.json** садржи датасет са к
             "hospital": 0,
             "personal": 0,
             "negative": 0,
+            "totalTested": 0,
+            "fatalM": 0,
+            "fatalF": 0,
             "fatal": 0,
             "recovered": 0,
-            "totalTested": 0
+            "caseP": "0.00"
         },
         "info":
         {
