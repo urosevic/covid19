@@ -12,6 +12,7 @@
 
 У овом репозиторијуму доступне су следеће датотеке:
 * **covid19srbija.json** - Комплетни збирни подацима у вези са COVID-19 у Србији. Извор је Гугл табела https://bit.ly/covid19-srbija у којој су прикупљени подаци са https://covid19.rs/ и https://www.zdravlje.gov.rs/sekcija/345852/covid-19.php
+* **covid19srbija.latest.json** - Комплетни збирни подацима у вези са COVID-19 у Србији према последњем извештају. Датасет је изведен из датотеке **covid19srbija.json**
 * **covid19srbija-gradovi.json** - Укупан број оболелих од COVID-19 у Србији по градовима. Препаковани подаци са https://data.gov.rs/sr/datasets/covid-19-zarazheni/
 * **covid19srbija-gradovi-kit.json** - Укупан број оболелих од COVID-19 у Србији по градовима. Препаковани подаци са https://covid19.data.gov.rs/
 * **covid19srbija-zarazeni-mesta.csv** - Препаковани подаци доступни на https://data.gov.rs/sr/datasets/covid-19-zarazheni/ о укупном броју заражених по свим местима у Србији у матрикс табелу у CSV формату. Користи се на https://docs.google.com/spreadsheets/d/1gT3aFebhafzvGfmIkEsBxT-vgPpr9UOnZDTAxnWP2U0/edit#gid=1501414670
@@ -37,33 +38,39 @@ JSON датотека **covid19srbija.json** садржи датасет са к
     "latest":
     {
         "date": "DD/MM/YYYY HH:MM",
+        "dateTime":
+        {
+            "date": "18.04.2020",
+            "time": "15:00"
+        },
         "totals":
         {
-            "tested": 20957,
-            "testedO": 20958,
-            "confirmed": 4054,
-            "fatal": 85,
-            "hospitalized": 2890,
-            "ventilator": 138,
-            "recovered": 400,
-            "caseP": "19.34",
-            "fatalP": "2.10",
-            "p0": 38,
-            "vs": 29,
-            "f0": 24
+            "tested": 36028,
+            "testedO": 36028,
+            "confirmed": 5994,
+            "fatal": 117,
+            "hospitalized": 3853,
+            "ventilator": 126,
+            "recovered": 637,
+            "active": 5240,
+            "caseP": "16.64",
+            "fatalP": "1.95",
+            "p0": 43,
+            "vs": 34,
+            "f0": 29
         },
         "details":
         {
-            "positive": 424,
-            "hospital": 424,
+            "positive": 304,
+            "hospital": 304,
             "personal": 0,
-            "negative": 2222,
-            "totalTested": 2646,
-            "fatalM": 3,
-            "fatalF": 2,
-            "fatal": 5,
-            "recovered": 0,
-            "caseP": "16.02"
+            "negative": 3158,
+            "totalTested": 3462,
+            "fatalM": 4,
+            "fatalF": 3,
+            "fatal": 7,
+            "recovered": 103,
+            "caseP": "8.78"
         },
         "info":
         {
@@ -74,6 +81,11 @@ JSON датотека **covid19srbija.json** садржи датасет са к
     "data": [
     {
         "date": "DD/MM/YYY HH:MM",
+        "dateTime":
+        {
+            "date": "DD.MM.YYYY",
+            "time": "HH:MM"
+        },
         "totals":
         {
             "tested": 0,
@@ -83,6 +95,7 @@ JSON датотека **covid19srbija.json** садржи датасет са к
             "hospitalized": 0,
             "ventilator": 0,
             "recovered": 0,
+            "active": 0,
             "caseP": "0.00",
             "fatalP": "0.00",
             "p0": 0,
@@ -108,6 +121,67 @@ JSON датотека **covid19srbija.json** садржи датасет са к
             "note": "..."
         }
     }]
+}
+```
+
+JSON датотека **covid19srbija.latest.json** садржи датасет са комплетним подацима о оболелима од COVID-19 у Србији за последњи извештај следеће структуре:
+
+```
+{
+    "name": "COVID-19 Srbija Community Data",
+    "description": "Подаци о случајевима у току епидемије COVID-19 у Србији",
+    "homepage": "https:\/\/github.com\/urosevic\/covid19",
+    "license": "ODC Open Database License (ODbL)",
+    "author":
+    {
+        "name": "Александар Урошевић",
+        "email": "urke.kg@gmail.com"
+    },
+    "source": "https:\/\/bit.ly\/covid19-srbija",
+    "updated": "2020-04-18T21:47:06+02:00",
+    "latest":
+    {
+        "date": "18\/04\/2020 15:00",
+        "dateTime":
+        {
+            "date": "18.04.2020",
+            "time": "15:00"
+        },
+        "totals":
+        {
+            "tested": 36028,
+            "testedO": 36028,
+            "confirmed": 5994,
+            "fatal": 117,
+            "hospitalized": 3853,
+            "ventilator": 126,
+            "recovered": 637,
+            "active": 5240,
+            "caseP": "16.64",
+            "fatalP": "1.95",
+            "p0": 43,
+            "vs": 34,
+            "f0": 29
+        },
+        "details":
+        {
+            "positive": 304,
+            "hospital": 304,
+            "personal": 0,
+            "negative": 3158,
+            "totalTested": 3462,
+            "fatalM": 4,
+            "fatalF": 3,
+            "fatal": 7,
+            "recovered": 103,
+            "caseP": "8.78"
+        },
+        "info":
+        {
+            "refs": ["https:\/\/www.zdravlje.gov.rs\/vest\/347089\/informacija-o-novom-korona-virusu-na-dan-1804-godine-u-15-casova.php"],
+            "note": ""
+        }
+    }
 }
 ```
 

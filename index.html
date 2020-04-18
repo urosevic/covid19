@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Потврђени случајеви коронавируса у Србији</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div class="mask">
+	</div><!-- .mask -->
+
+	<div class="wrapper">
+		<div class="row head">
+			<div class="col" data-name="title">Потврђени случајеви коронавируса у Србији</div>
+		</div><!-- .head -->
+		<div class="row meta">
+			<div class="col">
+				<span class="label date">За датум:</span> <span class="value" data-path="latest.dateTime.date">26.03.2020</span> <span class="label">у</span> <span class="value" data-path="latest.dateTime.time">15:00</span> <span class="sep">|</span> <span class="label">тестирано:</span> <span class="value" data-path="latest.details.totalTested">16</span> <span class="sep">|</span> <span class="label">позитивно:</span> <span class="value" data-path="latest.details.positive">0</span> <span class="sep">|</span> <span class="label">негативно:</span> <span class="value" data-path="latest.details.negative">16</span> <span class="sep">|</span> <span class="label">преминуло:</span> <span class="value" data-path="latest.details.fatal">0</span> <small>(<span data-path="latest.details.fatalM">0</span>м+<span data-path="latest.details.fatalF">0</span>ж)</small>
+			</div>
+		</div><!-- .meta -->
+
+		<div class="row row-space"></div><!-- .row-space -->
+
+		<div class="row hero">
+			<div class="col col-3 col-vert holder">
+				<div class="stat stat-sm">
+					<div class="label">укупно <br />тестирано</div>
+					<div class="value" data-path="latest.totals.tested">0</div>
+				</div><!-- .stat -->
+				<div class="stat stat-sm">
+					<div class="label">укупно <br />хоспитализовано</div>
+					<div class="value" data-path="latest.totals.hospitalized">0</div>
+				</div><!-- .stat -->
+			</div><!-- .col.holder -->
+			<div class="col col-6 total">
+				<div class="stat stat-lg stat-inv">
+					<div class="label">укупно заражено</div>
+					<div class="value" data-path="latest.totals.confirmed">0</div>
+				</div><!-- .stat -->
+			</div><!-- .total -->
+			<div class="col col-3 col-vert holder">
+				<div class="stat stat-sm">
+					<div class="label">однос<br /> заражених <i>*</i></div>
+					<div class="value" data-path="latest.totals.caseP">0</div>
+				</div><!-- .stat -->
+				<div class="stat stat-sm">
+					<div class="label">однос<br /> преминулих <i>*</i></div>
+					<div class="value" data-path="latest.totals.fatalP">0</div>
+				</div><!-- .stat -->
+			</div><!-- .col.holder -->
+		</div><!-- .row.hero -->
+
+		<div class="row row-space"></div><!-- .row-space -->
+
+		<div class="row stats">
+			<div class="col col-3 stat stat-md">
+				<div class="label">укупно <br />преминуло</div>
+				<div class="value" data-path="latest.totals.fatal">0</div>
+			</div><!-- .stat -->
+			<div class="col col-3 stat stat-md">
+				<div class="label">укупно на <br />респиратору</div>
+				<div class="value" data-path="latest.totals.ventilator">0</div>
+			</div><!-- .stat -->
+			<div class="col col-3 stat stat-md">
+				<div class="label">укупно <br />излечено <i>**</i></div>
+				<div class="value" data-path="latest.totals.recovered">0</div>
+			</div><!-- .stat -->
+			<div class="col col-3 stat stat-md">
+				<div class="label">укупно активних <br />случајева <i>***</i></div>
+				<div class="value" data-path="latest.totals.active">0</div>
+			</div><!-- .stat -->
+		</div><!-- .row.stats -->
+
+		<div class="row row-space"></div><!-- .row-space -->
+
+		<div class="row footer">
+			<div class="col col-4 source">
+				<span class="label">Извор:</span> <a href="https://github.com/urosevic/covid19" target="_blank">github.com/urosevic/covid19</a> <br /><span class="label hide">Извор:</span> <a href="https://bit.ly/covid19-srbija" target="_blank">bit.ly/covid19-srbija</a>
+			</div><!-- .col.source -->
+			<div class="col col-8 notes">
+				<i><span>**</span>*</i> У односу на укупан број тестираних<br />
+				<i><span>*</span>**</i> <strong>Извор:</strong> <span name="izvor" data-path="latest.info.refs">...</span><br />
+				<i>***</i> Израчунава се као разлика између укупног броја заражених и збира преминулих и излечених
+			</div><!-- .col.notes -->
+		</div><!-- .row.footer -->
+	</div><!-- .wrapper -->
+
+<!-- <script src="https://code.jquery.com/jquery-3.5.0.slim.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="assets/js/script.min.js"></script>
+</body>
+</html>
