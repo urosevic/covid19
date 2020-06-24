@@ -14,10 +14,14 @@
 		</div><!-- .head -->
 		<div class="row meta">
 			<div class="col">
-				<span class="label date">За датум:</span> <span class="value" data-path="latest.dateTime.date">26.03.2020</span> <span class="label">у</span> <span class="value" data-path="latest.dateTime.time">15:00</span> <span class="sep">|</span> <span class="label">тестирано:</span> <span class="value" data-path="latest.details.totalTested">16</span> <span class="sep">|</span> <span class="label">позитивно:</span> <span class="value" data-path="latest.details.positive">0</span> <span class="sep">|</span> <span class="label">негативно:</span> <span class="value" data-path="latest.details.negative">16</span> <span class="sep">|</span> <span class="label">преминуло:</span> <span class="value" data-path="latest.details.fatal">0</span> <small>(<span data-path="latest.details.fatalM">0</span>м+<span data-path="latest.details.fatalF">0</span>ж)</small><br />
-				<span class="label date">Број дана од:</span> <span class="label start">почетак пандемије:</span> <span class="value" data-name="days.start">0</span> <span class="sep">|</span> <span class="label p0">први потврђен случај:</span> <span class="value" data-name="days.p0">0</span> <span class="sep">|</span> <span class="label">уведено ванредно стање:</span> <span class="value" data-name="days.vs">0</span> <span class="sep">|</span> <span class="label">први смртни случај:</span> <span class="value" data-name="days.f0">0</span>
-			</div>
+				<span class="label date">За датум:</span> <span class="value" data-path="latest.dateTime.date">26.03.2020</span> <span class="label">у</span> <span class="value" data-path="latest.dateTime.time">15:00</span> <span class="sep">|</span> <span class="label">тестирано:</span> <span class="value" data-path="latest.details.totalTested">16</span> <span class="sep">|</span> <span class="label">позитивно:</span> <span class="value" data-path="latest.details.positive">0</span> <span class="sep">|</span> <span class="label">негативно:</span> <span class="value" data-path="latest.details.negative">16</span> <span class="sep">|</span> <span class="label">преминуло:</span> <span class="value" data-path="latest.details.fatal">0</span> <small>(<span data-path="latest.details.fatalM">0</span>м+<span data-path="latest.details.fatalF">0</span>ж)</small>
+			</div><!-- .col -->
 		</div><!-- .meta -->
+		<div class="row meta meta-days">
+			<div class="col">
+				<span class="label date">Број дана од:</span> <span class="label start">почетак пандемије:</span> <span class="value" data-name="days.start">0</span> <span class="sep">|</span> <span class="label p0">први потврђен случај:</span> <span class="value" data-name="days.p0">0</span> <span class="sep">|</span> <span class="label">уведено ванредно стање:</span> <span class="value" data-name="days.vs">0</span> <span class="sep">|</span> <span class="label">први смртни случај:</span> <span class="value" data-name="days.f0">0</span> <span class="sep">|</span> <span class="label">укинуто ванредно стање:</span> <span class="value" data-name="days.uvs">0</span>
+			</div>
+		</div><!-- .meta-days -->
 
 		<div class="row row-space"></div><!-- .row-space -->
 
@@ -54,20 +58,20 @@
 
 		<div class="row stats">
 			<div class="col col-3 stat stat-md">
-				<div class="label">укупно <br />преминуло</div>
-				<div class="value" data-path="latest.totals.fatal">0</div>
+				<div class="label">укупно активних <br />случајева <i>**</i></div>
+				<div class="value" data-path="latest.totals.active">0</div>
 			</div><!-- .stat -->
 			<div class="col col-3 stat stat-md">
 				<div class="label">укупно на <br />респиратору</div>
 				<div class="value" data-path="latest.totals.ventilator">0</div>
 			</div><!-- .stat -->
 			<div class="col col-3 stat stat-md">
-				<div class="label">укупно <br />излечено <i>**</i></div>
+				<div class="label">укупно <br />излечено <i>***</i></div>
 				<div class="value" data-path="latest.totals.recovered">0</div>
 			</div><!-- .stat -->
 			<div class="col col-3 stat stat-md">
-				<div class="label">укупно активних <br />случајева <i>***</i></div>
-				<div class="value" data-path="latest.totals.active">0</div>
+				<div class="label">укупно <br />преминуло</div>
+				<div class="value" data-path="latest.totals.fatal">0</div>
 			</div><!-- .stat -->
 		</div><!-- .row.stats -->
 
@@ -80,14 +84,14 @@
 			<div class="col col-8 notes">
 				<i><span>**</span>*</i> У односу на укупан број тестираних<br />
 				<i><span>*</span>**</i> <strong>Извор:</strong> <span name="izvor" data-path="latest.info.refs">...</span><br />
-				<i>***</i> Израчунава се као разлика између укупног броја заражених и збира преминулих и излечених
+				<i>***</i> Израчунава се као разлика између укупног броја заражених и збира преминулих и активних<br />
 			</div><!-- .col.notes -->
 		</div><!-- .row.footer -->
 	</div><!-- .wrapper -->
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css?v=20200624">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-<script src="assets/js/script.min.js"></script>
+<script src="assets/js/script.min.js?v=20200624"></script>
 </body>
 </html>
